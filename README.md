@@ -1,4 +1,4 @@
-# BlurAdmin Angular admin panel front-end framework
+# Dashboard
 
 ## Features
 * Responsive layout
