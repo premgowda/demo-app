@@ -14,7 +14,7 @@
             .state('charts.chartJs', {
                 url: '/chartJs',
                 templateUrl: 'app/pages/charts/chartJs/chartJs.html',
-                title: 'Chart.js',
+                title: 'Data volume Processing',
                 sidebarMeta: {
                     order: 200
                 }

@@ -8,7 +8,6 @@
   angular.module('BlurAdmin.pages.components', [
     'BlurAdmin.pages.components.mail',
     'BlurAdmin.pages.components.timeline',
-    'BlurAdmin.pages.components.tree',
   ])
       .config(routeConfig);
 

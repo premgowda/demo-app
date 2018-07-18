@@ -14,15 +14,15 @@
 
   /** @ngInject */
   function routeConfig($stateProvider) {
-    $stateProvider
-        .state('components.tree', {
-          url: '/tree',
-          templateUrl: 'app/pages/components/tree/tree.html',
-          title: 'Tree View',
-          sidebarMeta: {
-            order: 200,
-          },
-        });
+    // $stateProvider
+    //     .state('components.tree', {
+    //       url: '/tree',
+    //       templateUrl: 'app/pages/components/tree/tree.html',
+    //       title: 'Tree View',
+    //       sidebarMeta: {
+    //         order: 200,
+    //       },
+    //     });
   }
 
 })();

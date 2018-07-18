@@ -20,7 +20,7 @@
         .state('charts.morris', {
           url: '/morris',
           templateUrl: 'app/pages/charts/morris/morris.html',
-          title: 'Morris',
+          title: 'V- CPU utilization',
           sidebarMeta: {
             order: 300,
           }

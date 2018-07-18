@@ -14,7 +14,7 @@
         .state('charts.amCharts', {
           url: '/amCharts',
           templateUrl: 'app/pages/charts/amCharts/charts.html',
-          title: 'amCharts',
+          title: 'Bandwidth Utilization',
           sidebarMeta: {
             order: 0,
           },
