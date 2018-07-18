@@ -13,7 +13,7 @@
   }
   @media screen and (min-width: 1325px) {
     .pie-chart-item-container {
-      width: 25%;
+      width: 50%;
     }
   }
   @media screen and (min-width: 700px) and (max-width: 1325px)  {
@@ -71,12 +71,32 @@
   }
   .description {
     display: inline-block;
-    padding: 20px 0 0 20px;
-    font-size: 18px;
+    padding: 10px 0 0 10px;
     opacity: 0.9;
+    width:80%;
+    float: left;
+    .heading {
+      font-weight: bold;
+      font-size: 15px;
+    }
     .description-stats {
       padding-top: 8px;
-      font-size: 24px;
+      font-size: 13px;
+      ul {
+        li {
+          font-weight: 100;
+          b {
+            color: #da9c4a;
+          }
+        }
+      }
+    }
+  }
+  .chart-img {
+    width: 20%;
+    float: left;
+    img {
+      width: 80%;
     }
   }
   .angular {

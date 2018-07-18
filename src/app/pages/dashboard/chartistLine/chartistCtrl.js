@@ -6,28 +6,22 @@
   'use strict';
 
   angular.module('BlurAdmin.pages.charts.chartist')
-    .controller('chartistCtrl', chartistCtrl);
+    .controller('chartistLineCtrl', chartistCtrl);
 
   /** @ngInject */
   function chartistCtrl($scope, $timeout, baConfig) {
 
     $scope.simpleLineOptions = {
       color: baConfig.colors.defaultText,
-      fullWidth: true,
+      fullWidth: false,
       height: "300px",
-      chartPadding: {
-        right: 40
-      }
+      low: 0,
     };
 
     $scope.simpleLineData = {
-      labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+      labels: ['Year 2016', 'Year 2017'],
       series: [
-        [20, 20, 12, 45, 50],
-        [10, 45, 30, 14, 12],
-        [34, 12, 12, 40, 50],
-        [10, 43, 25, 22, 16],
-        [3, 6, 30, 33, 43]
+        [200000, 350000]
       ]
     };
 
@@ -69,10 +63,10 @@
     };
 
     $scope.simpleBarData = {
-      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      labels: ['Regular Days In(mbps)', 'Regular Days Out(mbps)', 'Blacks days  In(mbps)', 'Blacks Days Out(mbps)'],
       series: [
-        [15, 24, 43, 27, 5, 10, 23, 44, 68, 50, 26, 8],
-        [13, 22, 49, 22, 4, 6, 24, 46, 57, 48, 22, 4]
+        [50, 150, 160, 300],
+        [63, 180, 180, 350]
       ]
     };
 

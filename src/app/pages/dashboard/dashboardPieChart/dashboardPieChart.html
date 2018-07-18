@@ -1,13 +1,76 @@
 <div class="row pie-charts">
-  <div class="pie-chart-item-container" ng-repeat="chart in charts">
+  <div class="pie-chart-item-container">
     <div ba-panel>
       <div class="pie-chart-item">
-        <div class="chart" rel="{{ ::chart.color }}" data-percent="60"> <span class="percent"></span> </div>
-        <div class="description">
-          <div>{{ ::chart.description }}</div>
-          <div class="description-stats">{{ ::chart.stats }}</div>
+<!--         <div class="chart" rel="rgba(102, 102, 102, 0.2)" data-percent="60"> <span class="percent"></span> </div>
+ -->   <div class="description">
+          <div class="heading">Higher Order Volume</div>
+          <div class="description-stats">
+            <ul>
+              <li><b>3x</b> higher vs regular daily average</li>
+              <li><b>1.6x</b> higher vs. Black Friday Cyber Monday weekend of 2016</li>
+            </ul>
+          </div>
         </div>
-        <i class="chart-icon i-{{ ::chart.icon }}"></i>
+        <div class="chart-img" style="color:black">
+          <img ng-src="{{::( 'app/cart.png' | appImage )}}"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pie-chart-item-container">
+    <div ba-panel>
+      <div class="pie-chart-item">
+       <div class="description">
+          <div class="heading">Higher Internet Traffic</div>
+          <div class="description-stats">
+            <ul>
+              <li><b>93%</b> higher than regular daily average</li>
+              <li>Black Friday & Cyber Monday weekend daily average 6.36TB vs 3.30TB</li>
+            </ul>
+          </div>
+        </div>
+        <div class="chart-img" style="color:black">
+          <img ng-src="{{::( 'app/cloud.png' | appImage )}}"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pie-chart-item-container">
+    <div ba-panel>
+      <div class="pie-chart-item">
+       <div class="description">
+          <div class="heading">Higher Page Views</div>
+          <div class="description-stats">
+            <ul>
+              <li><b>42%</b> higher than reqular daily average</li>
+              <li><b>58%</b> higher than Black Friday & Cyber Moday weekend of 2016</li>
+            </ul>
+          </div>
+        </div>
+        <div class="chart-img" style="color:black">
+          <img ng-src="{{::( 'app/page.png' | appImage )}}"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pie-chart-item-container">
+    <div ba-panel>
+      <div class="pie-chart-item">
+       <div class="description">
+          <div class="heading">Sales Event</div>
+          <div class="description-stats">
+            <ul>
+              <li>Some customers enjoyed <b>4X</b> the growth vs last years's sales event</li>
+            </ul>
+          </div>
+        </div>
+        <div class="chart-img" style="color:black">
+          <img ng-src="{{::( 'app/sales.png' | appImage )}}"/>
+        </div>
       </div>
     </div>
   </div>
